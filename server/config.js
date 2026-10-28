@@ -22,7 +22,7 @@ export const env = {
   },
   port: Number(process.env.PORT) || 5174,
   trendyolActor: process.env.TRENDYOL_ACTOR || 'memo23/trendyol-scraper',
-  lensActor: process.env.LENS_ACTOR || 'scrape.badger/google-lens-scraper',
+  lensActor: process.env.LENS_ACTOR || 'johnvc/google-lens-api',
   metaActor: process.env.META_ADS_ACTOR || 'apify/facebook-ads-scraper',
   trendyolInputExtra: parseJson(process.env.TRENDYOL_INPUT_EXTRA),
 }
