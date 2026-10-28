@@ -179,7 +179,7 @@ export function startTrendyolCompetitors(productId, { query, maxItems = 30 } = {
 }
 
 function lensInput(imageUrl, country, language) {
-  if (/scrape\.badger/i.test(env.lensActor)) return { image_url: imageUrl, product: true, visual_matches: true, exact_matches: false, country, language }
+  if (/johnvc\/google-lens-api/i.test(env.lensActor)) return { image_url: imageUrl, search_type: 'visual_matches', country, language }
   return { imageUrl, image_url: imageUrl, country, language }
 }
 
