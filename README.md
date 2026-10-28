@@ -62,7 +62,7 @@ Testler: `npm test` (Node'un yerleşik test koşucusu; puanlama, metin eşleme v
 | Amaç | Aktör | Tahmini maliyet |
 |---|---|---|
 | Trendyol ürün + mağaza linki + satıcı ünvanı | `memo23/trendyol-scraper` | çalıştırma başına 0,005 $ + listeleme 0,0005 $/ürün, satıcı detayı 0,002 $/ürün, e-posta 0,02 $ (yalnızca bulunursa) |
-| Madde 3 & 6 — Google Lens (TR rakip + yurt dışı baz mağaza) | `scrape.badger/google-lens-scraper` | ~0,006 $ / görsel (ürün başına 2 tarama) |
+| Madde 3 & 6 — Google Lens (TR rakip + yurt dışı baz mağaza) | `johnvc/google-lens-api` | ~0,006 $ / görsel (ürün başına 2 tarama) |
 | Madde 5 — Meta Ads Library aktif reklam sayısı | `apify/facebook-ads-scraper` | ~3,4–5,8 $ / 1.000 reklam |
 
 Notlar:
