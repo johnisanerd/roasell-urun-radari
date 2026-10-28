@@ -215,7 +215,7 @@ export function normalizeLensItem(raw) {
     price: num(pick(raw, ['price.extracted', 'extracted_price', 'price.value', 'price'])),
     priceText,
     currency,
-    matchType: str(raw.type) || 'visual_match',
+    matchType: str(pick(raw, ['type', 'resultType'])) || 'visual_match',
     kind: classifyDomain(domain),
     isTurkish: !!domain && (domain.endsWith('.tr') || /TRY|TL|₺/i.test(`${currency || ''} ${priceText || ''}`)),
   }
